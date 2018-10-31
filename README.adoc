@@ -1,1 +1,2 @@
-
+SMARTDRIVE is made by changing codes in given sample by TOMTOM maps.
+Check samples apps for application.
