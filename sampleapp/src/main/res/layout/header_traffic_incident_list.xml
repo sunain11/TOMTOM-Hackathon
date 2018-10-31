@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:padding="@dimen/offset_small"
+              android:layout_marginBottom="@dimen/offset_small"
+              android:background="@color/white">
+
+    <TextView
+            android:id="@+id/trafficIncidentIconDesc"
+            android:layout_weight="2"
+            android:layout_width="@dimen/offset_no_offset"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textStyle="bold"
+            tools:text="Category"/>
+    <TextView
+            android:id="@+id/trafficIncidentDescription"
+            android:layout_weight="4"
+            android:layout_width="@dimen/offset_no_offset"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/offset_small"
+            android:gravity="center"
+            android:textStyle="bold"
+            tools:text="Description"/>
+
+    <TextView
+            android:id="@+id/trafficIncidentDelay"
+            android:layout_weight="2"
+            android:layout_width="@dimen/offset_no_offset"
+            android:layout_height="match_parent"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textStyle="bold"
+            tools:text="Delay"/>
+    <TextView
+            android:id="@+id/trafficIncidentLength"
+            android:layout_weight="2"
+            android:layout_width="@dimen/offset_no_offset"
+            android:layout_height="match_parent"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textStyle="bold"
+            tools:text="Length"/>
+</LinearLayout>

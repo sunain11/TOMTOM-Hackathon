@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+    Copyright (c) 2015-2017 TomTom N.V. All rights reserved.
+
+    This software is the proprietary copyright of TomTom N.V. and its subsidiaries and may be used
+    for internal evaluation purposes or commercial use strictly subject to separate licensee
+    agreement between you and TomTom. If you are the licensee, you are only permitted to use
+    this Software in accordance with the terms of your license agreement. If you are not the
+    licensee then you are not authorised to use this software in any manner and should
+    immediately return it to TomTom N.V.
+
+-->
+
+<resources>
+    <string name="app_name">Maps SDK Examples</string>
+
+    <string name="hello">Hello World, LogTool!</string>
+
+    <string name="title_activity_main">Maps SDK Examples</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="launcher_icon">launcher icon</string>
+
+    <string name="menu_navigation">TURN BY TURN NAVIGATION</string>
+    <string name="start_sample_simulation">Sample simulation</string>
+    <string name="route_types">Route types</string>
+    <string name="route_avoids">Route avoids</string>
+    <string name="route_waypoints">Route with waypoints</string>
+    <string name="route_alternatives">Alternative routes</string>
+    <string name="tomtom_logo">Tomtom logo</string>
+    <string name="travel_mode">Travel modes</string>
+
+    <string name="menu_shapes_polygon">Polygon</string>
+    <string name="menu_shapes_circle">Circle</string>
+    <string name="menu_shapes_polyline">Polyline</string>
+
+    <string name="menu_markers_balloon_simple">Simple</string>
+    <string name="menu_markers_balloon_detailed">Detailed</string>
+    <string name="menu_markers_balloon_custom">Custom</string>
+
+    <string name="menu_markers_simple">Simple</string>
+    <string name="menu_markers_decal">Decal</string>
+    <string name="menu_markers_simple_draggable">Draggable</string>
+    <string name="menu_markers_animated">Animated</string>
+    <string name="menu_markers_custom_view">Custom View</string>
+
+    <string name="menu_markers_custom">Markers</string>
+    <string name="menu_markers_custom_balloons">Balloons</string>
+    <string name="menu_custom_shapes">Shapes</string>
+
+    <string name="btn_text_fastest">Fastest</string>
+    <string name="btn_text_shortest">Shortest</string>
+    <string name="btn_text_easiest">Easiest</string>
+
+    <string name="btn_text_add_waypoints">Add waypoints</string>
+    <string name="btn_text_no_waypoints">No waypoints</string>
+
+    <string name="btn_text_avoid_tolls">Toll roads</string>
+    <string name="btn_text_avoid_ferries">Ferries</string>
+    <string name="btn_text_avoid_motorways">Motorways</string>
+
+    <string name="btn_text_travel_mode_pedestrian">Pedestrian</string>
+    <string name="btn_text_travel_mode_car">Car</string>
+    <string name="btn_text_travel_mode_truck">Truck</string>
+
+    <string name="btn_text_departure_at">Departure at</string>
+    <string name="btn_text_arrival_at">Arrival at</string>
+
+    <string name="menu_map_layers">MAP DISPLAY</string>
+    <string name="submenu_raster_map_traffic_layer">Raster map and traffic</string>
+    <string name="submenu_vector_map_traffic_layer">Vector map and traffic</string>
+    <string name="submenu_map_tiles_layer">Map layers</string>
+    <string name="submenu_my_location_layer">My Location</string>
+
+    <string name="traffic_incidents">Incidents</string>
+    <string name="traffic_flow">Flow</string>
+    <string name="traffic_off_btn">No traffic</string>
+
+    <string name="map_tiles_normal">Basic</string>
+    <string name="map_tiles_hybrid">Hybrid</string>
+    <string name="map_tiles_satellite">Satellite</string>
+
+    <string name="map_types_vector">Vector</string>
+    <string name="map_types_raster">Raster</string>
+    <string name="map_types_mixed">Vector/Raster</string>
+
+    <string name="map_style_night">Custom</string>
+    <string name="map_style_base">Basic</string>
+
+    <string name="map_custom_route">Custom</string>
+    <string name="map_basic_route">Basic</string>
+
+
+    <string name="my_location_on">Chevron on</string>
+    <string name="my_location_off">Chevron off</string>
+
+    <string name="batch_routing_title">Batch routing</string>
+    <string name="batch_routing_subtitle">Routing depends on:</string>
+    <string name="matrix_routing_title">Matrix routing</string>
+
+    <string name="search_btn_text">Go</string>
+    <string name="add_waypoint_btn_text">Add waypoint</string>
+    <string name="hint_origin">Origin</string>
+    <string name="hint_destination">Destination</string>
+    <string name="search_text">Search</string>
+    <string name="custom_routing">Custom simulation</string>
+    <string name="menu_map_manipulation">MAP MANIPULATION</string>
+    <string name="map_mode">Map perspective</string>
+    <string name="map_2d">2D mode</string>
+    <string name="map_3d">3D mode</string>
+    <string name="menu_map_display">Map display</string>
+    <string name="menu_events">Map events</string>
+    <string name="menu_events_on_map_click">Single Press</string>
+    <string name="menu_events_on_map_long_click">Long Press</string>
+    <string name="menu_events_on_map_panning">Panning</string>
+
+    <string name="map_center_amsterdam">Amsterdam</string>
+    <string name="map_center_berlin">Berlin</string>
+    <string name="map_center_london">London</string>
+    <string name="map_center_gps">GPS</string>
+
+    <string name="travel_mode_pedestrian_text">Pedestrian</string>
+    <string name="travel_mode_carpool_text">Carpool</string>
+    <string name="travel_mode_commercial_text">Commercial</string>
+    <string name="travel_mode_car_text">Car</string>
+    <string name="origin_or_destination_not_specified_error_message">Origin or destination not specified</string>
+
+    <string name="amsterdam_city_name">Amsterdam</string>
+    <string name="london_city_name">London</string>
+    <string name="rotterdam_city_name">Rotterdam</string>
+    <string name="berlin_city_name">Berlin</string>
+
+    <string name="utrecht">Utrecht</string>
+    <string name="amsterdam_to_utrecht_desc">Amsterdam to Utrecht</string>
+    <string name="amsterdam_to_rotterdam_desc">Amsterdam to Rotterdam</string>
+    <string name="amsterdam_to_berlin_desc">Amsterdam to Berlin</string>
+    <string name="amsterdam_to_oslo_desc">Amsterdam to Oslo</string>
+
+    <string name="haarlem_destination_address">Haarlem</string>
+    <string name="amsterdam_to_haarlem_desc">Amsterdam to Haarlem</string>
+    <string name="hague_destination_address">Hague</string>
+    <string name="rotterdam_destination_address">Bloklandstraat 86B, 3036 TN Rotterdam</string>
+    <string name="origin_or_destination_not_specified_warning">Origin or destination not specified</string>
+
+    <string name="address_search">Address search</string>
+    <string name="category_search">Category search</string>
+    <string name="fuzzy_search">Max fuzziness parameters</string>
+    <string name="fuzzy_search_description">It enables smart search in case of typos in query</string>
+    <string name="language_selector_search">Language parameter</string>
+    <string name="address_search_description">Search for address or POI</string>
+    <string name="category_search_description">Search for POIs in one of categories</string>
+    <string name="type_ahead_search">Typeahead parameter</string>
+    <string name="type_ahead_search_description">Enables typeahead suggestions</string>
+    <string name="near_me_search">Near me</string>
+    <string name="global_search">Global</string>
+    <string name="search">SEARCH</string>
+    <string name="parking">Parking</string>
+    <string name="gas">Gas</string>
+    <string name="atm">ATM</string>
+    <string name="auto_zoom_on_label">Auto-zoom on</string>
+    <string name="auto_zoom_off_label">Auto-zoom off</string>
+    <string name="speed_dependant_zoom_label">Speed dependent zoom</string>
+    <string name="search_activity_hint">Search</string>
+    <string name="search_failed_toast">Search failed&#8230;</string>
+    <string name="search_distance_calculating">Calculating&#8230;</string>
+
+    <string name="custom_simulation_wrong_data">Both origin and destination are required to run custom simulation!</string>
+    <string name="btn_text_eco">Eco</string>
+    <string name="berlin_amsterdam_route_title">Berlin - Amsterdam</string>
+    <string name="menu_route_planner">ROUTING</string>
+    <string name="menu_traffic">TRAFFIC</string>
+    <string name="fuzzy_max_first_label">MAX 1</string>
+    <string name="fuzzy_max_second_label">MAX 2</string>
+    <string name="fuzzy_max_third_label">MAX 3</string>
+
+    <string name="reverse_geocoding">Reverse geocoding</string>
+    <string name="reverse_geocoding_error">Response failed</string>
+    <string name="reverse_geocoding_no_results">No revgeo data</string>
+    <string name="reverse_geocoding_fetching">Fetching revgeo data</string>
+
+    <string name="other">Other</string>
+    <string name="balloon_tomtom_hq">TomTom HQ</string>
+    <string name="balloon_default_text">Welcome to TomTom</string>
+
+    <string name="map_ui_extensions">Map UI extensions</string>
+    <string name="map_ui_extensions_title">Map UI extensions</string>
+    <string name="map_ui_extensions_default">Default</string>
+    <string name="map_ui_extensions_hide">Hide</string>
+    <string name="map_ui_extensions_custom">Custom</string>
+    <string name="choose_module">Choose module</string>
+    <string name="dialog_routing_in_progress_msg">Routing in progress...</string>
+
+    <string name="btn_text_initial_order">Initial order</string>
+    <string name="btn_text_best_order">Best order</string>
+    <string name="btn_text_clear">No waypoints</string>
+    <string name="label_arrival_time">Arrival time:</string>
+    <string name="label_departure_time">Departure time:</string>
+    <string name="msg_error_date_in_past">The departure and arrival can not be in the past.</string>
+    <string name="msg_error_general_route_processing">An error occurred during the route planning processing: %1$s.</string>
+
+    <string name="btn_text_one">1</string>
+    <string name="btn_text_three">3</string>
+    <string name="btn_text_five">5</string>
+
+    <string name="btn_batch_depends_on_travel_mode">Travel mode</string>
+    <string name="btn_batch_depends_on_route_type">Route type</string>
+    <string name="btn_batch_depends_on_avoids">Avoids</string>
+
+    <string name="distance_km">%1$d km</string>
+    <string name="distance_m">%1$d m</string>
+    <string name="long_press_waypoint">Long press to add waypoint</string>
+    <string name="no_long_press_waypoint">No possibility to add waypoint</string>
+    <string name="license_header_text"><![CDATA[This Maps SDK Examples app is provided by TomTom and subject to TomToms privacy policy at <a href="https://tomtom.com/privacy">https://tomtom.com/privacy</a>. </br></br>Developers using TomTom SDKs and APIs in their apps similarly bear responsibility to adhere to applicable privacy laws. </br></br>These Maps SDK Examples are provided as-is and shall be used internally, and for evaluation purposes only. Any other use is strictly prohibited.]]></string>
+    <string name="menu_lang_param">Map language</string>
+    <string name="menu_geopolitical_view">Geopolitical view</string>
+    <string name="menu_custom_style">Custom style</string>
+    <string name="menu_static_image">Static map image</string>
+    <string name="menu_route_customization">Route customization</string>
+    <string name="english">English</string>
+    <string name="russian">Russian</string>
+    <string name="dutch">Dutch</string>
+    <string name="europe">Europe</string>
+
+    <string name="geopolitical_unified">Unified</string>
+    <string name="geopolitical_local">Local</string>
+    <string name="disputed_boarders_israel">Disputed borders in Israel</string>
+
+    <string name="circle_clicked">Circle clicked!</string>
+    <string name="polygon_clicked">Polygon clicked!</string>
+    <string name="polyline_clicked">Polyline clicked!</string>
+
+    <string name="btn_text_car_repair">Car repair</string>
+    <string name="btn_text_gas_stations">Gas stations</string>
+    <string name="btn_text_ev_stations">EV stations</string>
+    <string name="search_along_route">Search along the route</string>
+
+    <string name="btn_text_parking">Parking</string>
+    <string name="btn_text_atm">ATM</string>
+    <string name="btn_text_grocery">Grocery</string>
+    <string name="geometry_search">Geometry search</string>
+
+    <string name="entry_points">Entry points</string>
+    <string name="btn_text_airport">Airport</string>
+    <string name="btn_text_shopping_mall">Shopping Mall</string>
+    <string name="entry_points_type">Entry point type: %1$s</string>
+    <string name="entry_points_no_results">No results available</string>
+
+    <string name="btn_text_electric">Electric</string>
+    <string name="btn_text_combustion">Combustion</string>
+    <string name="btn_two_hours">Time - 2h</string>
+    <string name="electric_consumption">Consumption: %1$.2f kWh</string>
+    <string name="combustion_consumption">Consumption: %1$.2f liters</string>
+
+    <string name="supporting_points_subtitle">Choose min. deviation distance</string>
+    <string name="btn_txt_0_m">0 m</string>
+    <string name="btn_txt_10_km">10 km</string>
+
+    <string name="additional_data_provider_subtitle">Polygons for geographies</string>
+    <string name="btn_text_poland">Poland</string>
+    <string name="btn_text_amsterdam">Amsterdam</string>
+    <string name="btn_text_berlin">Berlin</string>
+    <string name="traffic_incident_list_header_desc">Description</string>
+    <string name="traffic_incident_list_header_delay">Delay</string>
+    <string name="traffic_incident_list_header_length">Length</string>
+    <string name="traffic_incident_list_header_category">Category</string>
+
+    <string name="batch_search">Batch search</string>
+    <string name="batch_routing">Batch routing</string>
+    <string name="batch_search_subtitle">Search for categories in different locations</string>
+    <string name="btn_text_gas">Gas</string>
+    <string name="btn_text_bar">Bar</string>
+    <string name="batch_error">Batch error: %1$s</string>
+    <string name="traffic_incident_cluster_description">Multiple incidents</string>
+    <string name="batch_travel_mode_truck_text">Travel by truck</string>
+    <string name="batch_travel_mode_car_text">Travel by car</string>
+    <string name="batch_travel_mode_pedestrian_text">Travel as pedestrian</string>
+    <string name="batch_route_type_fastest">Fastest route</string>
+    <string name="batch_route_type_shortest">Shortest route</string>
+    <string name="batch_route_type_eco">Eco route</string>
+    <string name="batch_avoid_motorways">Avoid motorways</string>
+    <string name="batch_avoid_toll_roads">Avoid toll roads</string>
+    <string name="batch_avoid_ferries">Avoid ferries</string>
+    <string name="restaurant_wagamama">Wagamama</string>
+    <string name="restaurant_bridges">Bridges</string>
+    <string name="restaurant_greetje">Restaurant Greetje</string>
+    <string name="restaurant_la_rive">Restaurant La Rive</string>
+    <string name="pasenger_one">One</string>
+    <string name="passenger_two">Two</string>
+    <string name="taxi_one">A</string>
+    <string name="taxi_two">B</string>
+    <string name="label_matrix_table_header_no">Route</string>
+    <string name="label_matrix_table_header_origin">Origin</string>
+    <string name="label_matrix_table_header_destination">Destination</string>
+    <string name="label_matrix_table_header_distance">Distance</string>
+    <string name="label_matrix_table_header_eta">ETA</string>
+    <string name="matrix_routing_action_btn_one_to_many">One to Many</string>
+    <string name="matrix_routing_action_btn_many_to_many">Many to Many</string>
+    <string name="matrix_routing_error_message">Error occurred during matrix routes calculation.</string>
+    <string name="label_matrix_header_pick_up">Pick up</string>
+    <string name="label_matrix_header_passenger">Passenger</string>
+    <string name="label_matrix_header_taxi">Taxi</string>
+    <string name="passenger_ballon_prefix">Passenger</string>
+    <string name="taxi_ballon_prefix">Taxi</string>
+    <string name="restaurant_envy">Envy</string>
+    <string name="marker_dragging_end_message">Marker was dragged to</string>
+    <string name="marker_dragging_start_message">Marker dragged from</string>
+
+    <string name="dynamic_map">Dynamic map</string>
+    <string name="chevron_tracking">Chevron tracking</string>
+    <string name="chevron_tracking_subtitle">Camera follows the chevron</string>
+    <string name="chevron_tracking_start">Start tracking</string>
+    <string name="chevron_tracking_stop">Stop tracking</string>
+
+    <string name="menu_advanced_markers">Advanced markers</string>
+    <string name="advanced_markers_options_title">Advanced markers</string>
+
+</resources>

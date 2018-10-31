@@ -1,0 +1,62 @@
+<!--
+
+    Copyright (c) 2015-2017 TomTom N.V. All rights reserved.
+
+    This software is the proprietary copyright of TomTom N.V. and its subsidiaries and may be used
+    for internal evaluation purposes or commercial use strictly subject to separate licensee
+    agreement between you and TomTom. If you are the licensee, you are only permitted to use
+    this Software in accordance with the terms of your license agreement. If you are not the
+    licensee then you are not authorised to use this software in any manner and should
+    immediately return it to TomTom N.V.
+
+-->
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="nav_header_height">160dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="routing_button_padding_horizontal">20dp</dimen>
+    <dimen name="routing_button_padding_vertical">15dp</dimen>
+    <dimen name="custom_toast_padding">16dp</dimen>
+    <dimen name="routing_button_corner_radius">1dp</dimen>
+    <dimen name="routing_button_checked_stroke_width">3dp</dimen>
+    <dimen name="search_icon_width">20dp</dimen>
+    <dimen name="text_size_big">18sp</dimen>
+    <dimen name="text_size_medium">14sp</dimen>
+    <dimen name="text_size_default">16sp</dimen>
+    <dimen name="text_size_small">10sp</dimen>
+    <dimen name="offset_xsmall">3dp</dimen>
+    <dimen name="offset_small">5dp</dimen>
+    <dimen name="offset_default_small">8dp</dimen>
+    <dimen name="offset_default">10dp</dimen>
+    <dimen name="offset_options_buttons">15dp</dimen>
+    <dimen name="offset_medium">15dp</dimen>
+    <dimen name="offset_big">20dp</dimen>
+    <dimen name="offset_extra_big">25dp</dimen>
+    <dimen name="offset_super_big">55dp</dimen>
+    <dimen name="search_edit_text_rounding_width">1dp</dimen>
+    <dimen name="search_edit_text_rounding_padding">16dp</dimen>
+    <dimen name="radio_rounding_padding">16dp</dimen>
+
+    <dimen name="control_button_width">100dp</dimen>
+    <dimen name="control_button_height">36dp</dimen>
+    <dimen name="control_button_margin">1dp</dimen>
+    <dimen name="control_bottom_panel_height">50dp</dimen>
+    <dimen name="button_size">50dp</dimen>
+    <dimen name="control_top_panel_height">56dp</dimen>
+    <dimen name="control_bottom_panel_margin">4dp</dimen>
+    <dimen name="search_flag_size">32dp</dimen>
+    <dimen name="search_flag_margin_horizontal">12dp</dimen>
+    <dimen name="search_flag_margin_vertical">8dp</dimen>
+    <dimen name="my_location_button_size">40dp</dimen>
+    <dimen name="selector_height">40dp</dimen>
+    <dimen name="fab_margin">20dp</dimen>
+    <dimen name="offset_no_offset">0dp</dimen>
+    <dimen name="eta_panel_height">40dp</dimen>
+    <dimen name="button_offset">15dp</dimen>
+    <dimen name="static_image_margin">1dp</dimen>
+    <dimen name="matrix_routing_box_height">200dp</dimen>
+    <dimen name="common_layout_zero_dp">0dp</dimen>
+
+</resources>

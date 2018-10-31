@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+    Copyright (c) 2015-2017 TomTom N.V. All rights reserved.
+
+    This software is the proprietary copyright of TomTom N.V. and its subsidiaries and may be used
+    for internal evaluation purposes or commercial use strictly subject to separate licensee
+    agreement between you and TomTom. If you are the licensee, you are only permitted to use
+    this Software in accordance with the terms of your license agreement. If you are not the
+    licensee then you are not authorised to use this software in any manner and should
+    immediately return it to TomTom N.V.
+
+-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tomtom.online.sdk.samples"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-sdk tools:overrideLibrary="android.support.test.uiautomator.v18" />
+    <application
+        android:name="com.tomtom.online.sdk.samples.SampleApp"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/TomTomTheme"
+        android:testOnly="false">
+
+        <activity
+            android:name="com.tomtom.online.sdk.samples.activities.SplashActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_main"
+            android:noHistory="true"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tomtom.online.sdk.samples.activities.FunctionalExamplesActivity"
+            android:label="@string/title_activity_main"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:windowSoftInputMode="stateUnchanged|adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="OnlineMaps.Key"
+            android:value="kS1RsvhZaYuNj6MbsOYI1wM29UWtTQMs" />
+
+        <meta-data
+            android:name="OnlineRouting.Key"
+            android:value="kS1RsvhZaYuNj6MbsOYI1wM29UWtTQMs" />
+        <meta-data
+            android:name="OnlineSearch.Key"
+            android:value="kS1RsvhZaYuNj6MbsOYI1wM29UWtTQMs" />
+        <!--<meta-data-->
+            <!--android:name="OnlineTraffic.Key"-->
+            <!--android:value="undefined" />-->
+
+
+
+    </application>
+
+</manifest>

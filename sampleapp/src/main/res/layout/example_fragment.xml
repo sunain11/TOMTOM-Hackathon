@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+
+    Copyright (c) 2015-2017 TomTom N.V. All rights reserved.
+
+    This software is the proprietary copyright of TomTom N.V. and its subsidiaries and may be used
+    for internal evaluation purposes or commercial use strictly subject to separate licensee
+    agreement between you and TomTom. If you are the licensee, you are only permitted to use
+    this Software in accordance with the terms of your license agreement. If you are not the
+    licensee then you are not authorised to use this software in any manner and should
+    immediately return it to TomTom N.V.
+
+-->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+    <com.tomtom.online.sdk.samples.utils.views.InfoBarView
+        android:id="@+id/info_bar_view"
+        layout="@layout/info_bar_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/eta_panel_height"
+        android:layout_gravity="top"
+        android:visibility="gone" />
+
+    <com.tomtom.online.sdk.samples.utils.views.OptionsButtonsView
+        android:id="@+id/optionsButtons"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/control_bottom_panel_height"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="@dimen/offset_options_buttons"
+        android:gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/infoTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="@dimen/offset_super_big"
+        android:background="@drawable/info_view_background"
+        android:gravity="center"
+        android:padding="@dimen/offset_medium"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_default"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+</FrameLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?><!-- single item in a search result list -->
+<!--
+
+    Copyright (c) 2015-2017 TomTom N.V. All rights reserved.
+
+    This software is the proprietary copyright of TomTom N.V. and its subsidiaries and may be used
+    for internal evaluation purposes or commercial use strictly subject to separate licensee
+    agreement between you and TomTom. If you are the licensee, you are only permitted to use
+    this Software in accordance with the terms of your license agreement. If you are not the
+    licensee then you are not authorised to use this software in any manner and should
+    immediately return it to TomTom N.V.
+
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:background="@drawable/search_result_item_background"
+    android:minHeight="48dp"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/dir_image"
+        android:layout_width="@dimen/search_flag_size"
+        android:layout_height="@dimen/search_flag_size"
+        android:src="@drawable/ic_search_listflag"
+        android:layout_marginLeft="@dimen/search_flag_margin_horizontal"
+        android:layout_marginRight="@dimen/search_flag_margin_horizontal"
+        android:layout_marginTop="@dimen/search_flag_margin_vertical"
+        android:layout_marginBottom="@dimen/search_flag_margin_vertical"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"/>
+
+    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/apk/res/android"
+        android:id="@+id/search_item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_centerVertical="true"
+        android:textSize="@dimen/text_size_default"
+        android:layout_toRightOf="@id/dir_image"
+        android:layout_toEndOf="@id/dir_image"
+        android:gravity="center_vertical|start"
+        tools:text="@string/hello"
+        android:textColor="@color/dark_grey" />
+
+
+</RelativeLayout>
+

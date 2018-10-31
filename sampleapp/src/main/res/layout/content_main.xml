@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+
+    Copyright (c) 2015-2017 TomTom N.V. All rights reserved.
+
+    This software is the proprietary copyright of TomTom N.V. and its subsidiaries and may be used
+    for internal evaluation purposes or commercial use strictly subject to separate licensee
+    agreement between you and TomTom. If you are the licensee, you are only permitted to use
+    this Software in accordance with the terms of your license agreement. If you are not the
+    licensee then you are not authorised to use this software in any manner and should
+    immediately return it to TomTom N.V.
+
+-->
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/content_main_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tomtom="http://schemas.android.com/apk/res-auto">
+
+    <!-- workaround for drawer not rendering properly on HTC and Huawei devices -->
+    <!-- http://stackoverflow.com/questions/15432961/slidingdrawer-over-googlemap/16231935#16231935 -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!--tag::doc_xml_map_layout[]-->
+
+        <fragment
+            android:id="@+id/map_fragment"
+            android:name="com.tomtom.online.sdk.map.MapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="0 km/h"
+            android:id="@+id/speed_text"
+            android:gravity="center"
+            android:textColor="@color/black_fully_opaque"
+            android:background="@drawable/circle"
+            />
+        <!--end::doc_xml_map_layout[]-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/functional_example_control_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <FrameLayout
+        android:id="@+id/route_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</FrameLayout>
+
+

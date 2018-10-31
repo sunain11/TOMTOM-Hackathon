@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+    Copyright (c) 2015-2017 TomTom N.V. All rights reserved.
+
+    This software is the proprietary copyright of TomTom N.V. and its subsidiaries and may be used
+    for internal evaluation purposes or commercial use strictly subject to separate licensee
+    agreement between you and TomTom. If you are the licensee, you are only permitted to use
+    this Software in accordance with the terms of your license agreement. If you are not the
+    licensee then you are not authorised to use this software in any manner and should
+    immediately return it to TomTom N.V.
+
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingTop="?android:attr/actionBarSize">
+
+    <EditText
+        android:id="@+id/search_text"
+        style="@style/SearchEditText"
+        android:layout_marginLeft="@dimen/offset_default"
+        android:layout_marginRight="@dimen/offset_default"
+        android:layout_marginTop="@dimen/offset_default"
+        android:hint="@string/search_activity_hint"
+        android:imeOptions="actionSearch"
+        android:inputType="text" />
+
+    <com.tomtom.online.sdk.samples.utils.views.RadioModifierView
+        android:id="@+id/search_modifier_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:first_middle_button_visible="true"
+        app:second_middle_button_visible="true"
+        android:layout_margin="@dimen/offset_medium"/>
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:choiceMode="singleChoice"
+        android:drawSelectorOnTop="false" />
+</LinearLayout>

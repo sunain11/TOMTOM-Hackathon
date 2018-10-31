@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+    Copyright (c) 2015-2017 TomTom N.V. All rights reserved.
+
+    This software is the proprietary copyright of TomTom N.V. and its subsidiaries and may be used
+    for internal evaluation purposes or commercial use strictly subject to separate licensee
+    agreement between you and TomTom. If you are the licensee, you are only permitted to use
+    this Software in accordance with the terms of your license agreement. If you are not the
+    licensee then you are not authorised to use this software in any manner and should
+    immediately return it to TomTom N.V.
+
+-->
+<resources>
+
+    <string name="traffic_layers_title">Raster map and traffic</string>
+    <string name="traffic_incident_list_title">Traffic incident list</string>
+    <string name="traffic_vector_layers_title">Vector map and traffic</string>
+    <string name="simple_simulation_title">Sample simulation</string>
+    <string name="route_avoids_title">Route avoids</string>
+    <string name="route_waypoints_title">Route with waypoints</string>
+    <string name="map_tiles_layers_title">Map layers</string>
+    <string name="map_tiles_types_title">Map tiles</string>
+    <string name="map_styles_title">Custom styles</string>
+    <string name="chevron_on_off">Chevron on/off</string>
+    <string name="my_location">My location layer</string>
+    <string name="custom_simulation_title">Custom simulation</string>
+    <string name="route_options_title">Route types</string>
+    <string name="maneuvers_list_title">Maneuvers list</string>
+    <string name="map_events_title">Map events</string>
+    <string name="map_view_perspective_title">Map perspective</string>
+    <string name="route_travel_mode_title">Travel modes</string>
+    <string name="route_departure_and_arrival_time_title">Departure/arrival time</string>
+    <string name="traveling_type_auto_title">Traveling type auto detection</string>
+    <string name="markers_options_title">Markers</string>
+    <string name="markers_balloons_title">Balloons</string>
+    <string name="shapes_title">Shapes</string>
+    <string name="menu_markers_options">MAP ANNOTATIONS</string>
+    <string name="menu_markers_balloons">Balloons</string>
+    <string name="menu_map_centering">Map centering</string>
+    <string name="reverse_geocoding_title">Reverse geocoding</string>
+    <string name="reverse_geocoding_subtitle">Drop a pin</string>
+    <string name="about_menu">About</string>
+    <string name="static_image_title">Static map image</string>
+    <string name="static_image_help">Press map image for details</string>
+    <string name="route_alternatives_title">Alternative routes</string>
+    <string name="search_along_route_title">Search along the route</string>
+    <string name="geometry_search_title">Geometry search</string>
+    <string name="entry_points_title">Entry points search</string>
+    <string name="route_consumption_model">Consumption model</string>
+    <string name="route_supporting_points">Supporting points</string>
+    <string name="markers_clustering_title">Markers clustering</string>
+    <string name="route_reachable_range">Reachable range</string>
+    <string name="additional_data_provider_search">Additional data</string>
+    <string name="empty" />
+
+</resources>

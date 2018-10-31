@@ -1,0 +1,5 @@
+TomTom uses open source software in its products and is committed to supporting the open source
+developer community. For each product that TomTom distributes, TomTom provides source attribution,
+where applicable. Where required by the terms of the open source license.
+Information about used libraries and corresponding licenses are inside assets/licenses directory
+of this package.

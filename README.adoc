@@ -1,0 +1,114 @@
+= Maps SDK For Android Examples
+
+image:https://circleci.com/gh/tomtom-international/maps-sdk-for-android-examples/tree/master.svg?style=svg["CircleCI", link="https://circleci.com/gh/tomtom-international/maps-sdk-for-android-examples/tree/master"]
+
+Clone repository and build the Maps SDK Examples app to see key features of the Maps SDK.
+Modify the source code to learn more about the SDK.
+This Maps SDK Examples app is provided by TomTom and subject to TomToms privacy policy at https://www.tomtom.com/privacy/[https://tomtom.com/privacy].
+Developers using TomTom SDKs and APIs in their apps similarly bear responsibility to adhere to applicable privacy laws.
+These Maps SDK Examples are provided as-is and shall be used internally, and for evaluation purposes only. Any other use is strictly prohibited.
+
+== Documentation
+
+More informations how to start are available on: https://developer.tomtom.com/maps-android-sdk/downloads-0[Maps SDK for Android page].
+
+* https://developer.tomtom.com/maps-android-sdk/map[Map]
+* https://developer.tomtom.com/maps-android-sdk/search[Search]
+* https://developer.tomtom.com/maps-android-sdk/routing[Routing]
+* https://developer.tomtom.com/maps-sdk-android/traffic[Traffic]
+* https://developer.tomtom.com/maps-sdk-android/release-notes[Release notes]
+* https://developer.tomtom.com/maps-sdk-android/migrate-google-maps-tomtom[Migration guide from Google Maps SDK]
+
+== Api Reference
+
+* https://developer.tomtom.com/maps-sdk-android/api-reference[Javadocs for Map]
+* https://developer.tomtom.com/maps-android-sdk/api-reference-1[Javadocs for Search]
+* https://developer.tomtom.com/maps-android-sdk/api-reference[Javadocs for Routing]
+* https://developer.tomtom.com/maps-sdk-android/api-reference-0[Javadocs for Traffic]
+
+== Project set up
+
+To develop your own application with Maps SDK, you need to make sure that the *pre-requisites* are in place and that you have added Maps SDK  as a dependency into your project. Follow the steps below and then you are ready to code!
+
+
+[[pre-requisites]]
+=== Get the pre-requisites in place:
+
+* Android Studio IDE installed (https://developer.android.com/studio/index.html[Android Studio])
+* Set up the application minimum API level to Android 4.4 "Kit Kat" (API Level 16) or higher
+
+[[setting-up-a-project]]
+=== Set up your project like this:
+
+1.  Open Android Studio IDE
+2.  Create a new project or open an existing one
+
+
+[[projects-access]]
+=== Add repositories to all projects to root/build.gradle:
+
+[source,shell,indent=0]
+----
+allprojects {
+
+   repositories {
+      google()
+      jcenter()
+      maven {
+         url 'https://maven.tomtom.com:8443/nexus/content/repositories/releases/'
+      }
+   }   
+}
+----
+
+=== Configuration for all Maps SDK modules
+
+To include all Maps SDK modules in your app, modify AndroidManifest.xml
+and build.gradle  
+
+* Modify AndroidManifest.xml
+
++
+Add service keys, taken from http://developer.tomtom.com, inside <application> tag.
+
++
+[source,shell,indent=0]
+----
+<meta-data android:name="OnlineMaps.Key" android:value="undefined" />
+<meta-data android:name="OnlineTraffic.Key" android:value="undefined" />
+<meta-data android:name="OnlineSearch.Key" android:value="undefined" />
+<meta-data android:name="OnlineRouting.Key" android:value="undefined" />
+----
+
+* Modify build.gradle (app/build.gradle)
+
++
+[source,shell,indent=0]
+----
+//library required to display map
+api "com.tomtom.online:sdk-maps:2.+"
+
+//library required for search
+api "com.tomtom.online:sdk-search:2.+"
+
+//library required for routing
+api "com.tomtom.online:sdk-routing:2.+"
+
+//library required for traffic
+api "com.tomtom.online:sdk-traffic:2.+"
+----
+
+* Add MultiDex support if required, as described https://developer.android.com/studio/build/multidex.html[here]
+
+== License
+
+Copyright (c) 2015-2018 TomTom N.V. All rights reserved.
+
+This software is the proprietary copyright of TomTom N.V. and its subsidiaries and may be used
+for internal evaluation purposes or commercial use strictly subject to separate licensee
+agreement between you and TomTom. If you are the licensee, you are only permitted to use
+this Software in accordance with the terms of your license agreement. If you are not the
+licensee then you are not authorised to use this software in any manner and should
+immediately return it to TomTom N.V.
+
+See the <<LICENSE#,LICENSE>> file for details.

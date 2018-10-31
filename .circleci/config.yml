@@ -1,0 +1,110 @@
+version: 2
+
+references:
+
+  cache_key: &cache_key
+    key: jars-{{ checksum "build.gradle" }}-{{ checksum  "dependenciesVersions.gradle" }}
+
+  gems_key: &gems_key
+      key: gems-{{ checksum "Gemfile.lock" }}
+
+  restore_cache: &restore_cache
+      restore_cache:
+          <<: *cache_key
+  save_cache: &save_cache
+      save_cache:
+          <<: *cache_key
+          paths:
+            - ~/.gradle
+            - ~/.m2
+  restore_gems_cache: &restore_gems_cache
+      restore_cache:
+        <<: *gems_key
+
+  save_gems_cache: &save_gems_cache
+      save_cache:
+        <<: *gems_key
+        paths:
+          - vendor/bundle
+  workspace: &workspace
+      ~/workspace
+  attach_debug_workspace: &attach_debug_workspace
+      attach_workspace:
+        at: *workspace
+  attach_release_workspace: &attach_release_workspace
+      attach_workspace:
+        at: *workspace
+  persist_debug_workspace: &persist_debug_workspace
+      persist_to_workspace:
+        root: *workspace
+        paths:
+          - sampleapp/build/outputs/androidTest-results
+          - sampleapp/build/outputs/apk
+          - sampleapp/build/outputs/code-coverage
+          - sampleapp/build/test-results
+  persist_release_workspace: &persist_release_workspace
+      persist_to_workspace:
+        root: *workspace
+        paths:
+          - sampleapp/build/outputs/apk
+  attach_firebase_workspace: &attach_firebase_workspace
+      attach_workspace:
+        at: *workspace
+  persist_firebase_workspace: &persist_firebase_workspace
+      persist_to_workspace:
+        root: *workspace
+        paths:
+          - firebase
+
+  android_config: &android_config
+      working_directory: *workspace
+      docker:
+        - image: circleci/android:api-27-alpha
+      environment:
+          TERM: dumb
+          GRADLE_OPTS: '-Dorg.gradle.jvmargs="-Xmx2048m"'
+  swap_tt_key: &swap_tt_key
+      run:
+        name: Swap TomTom Key
+        command: sed -i "s/undefined/$SECRET/g" sampleapp/src/main/AndroidManifest.xml
+
+  ruby_dependencies: &ruby_dependencies
+      run:
+          name: Download Ruby Dependencies
+          command: bundle update || bundle install --path vendor/bundle
+
+jobs:
+
+  build_release:
+      <<: *android_config
+      steps:
+        - checkout
+        - *restore_gems_cache
+        - *restore_cache
+        - *attach_debug_workspace
+        - *swap_tt_key
+        - *ruby_dependencies
+        - *save_gems_cache
+        - run:
+            name: Download dependencies
+            command: ./gradlew androidDependencies
+        - *save_cache
+        - run:
+            name: Run Tests
+            command: bundle exec fastlane android build
+        - *save_cache
+        - *persist_debug_workspace
+        - store_artifacts:
+            path: sampleapp/build/reports
+            destination: reports
+        - store_artifacts:
+            path: sampleapp/build/outputs/apk/
+            destination: apk
+        - store_test_results:
+            path: sampleapp/build/test-results
+
+workflows:
+  version: 2
+  all:
+    jobs:
+      - build_release

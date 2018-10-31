@@ -1,0 +1,94 @@
+apply plugin: 'com.android.application'
+
+android {
+    buildToolsVersion '28.0.3'
+    compileSdkVersion rootProject.androidCompileSdkVersion
+
+    defaultConfig {
+
+        targetSdkVersion androidTargetSdkVersion
+        minSdkVersion androidMinSdkVersion
+        versionCode buildVersionCode
+        versionName buildVersionName
+        multiDexEnabled true
+        dimension "locale"
+        buildConfigField("String[]", "BUILT_IN_LOCALE", '{"en-US","es-ES","fr-FR","de-DE"}');
+        applicationId 'com.tomtom.mapssdk.examplesapp'
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+
+    packagingOptions {
+        merge 'META-INF/services/javax.annotation.processing.Processor'
+        merge 'META-INF/DEPENDENCIES.txt'
+        merge 'META-INF/LICENSE.txt'
+        merge 'META-INF/NOTICE.txt'
+        merge 'META-INF/NOTICE'
+        merge 'META-INF/LICENSE'
+        merge 'META-INF/DEPENDENCIES'
+        merge 'META-INF/notice.txt'
+        merge 'META-INF/license.txt'
+        merge 'META-INF/dependencies.txt'
+        merge 'META-INF/LGPL2.1'
+        merge 'constants.properties'
+        merge 'META-INF/licence.txt'
+        merge 'META-INF/rxjava.properties'
+    }
+
+    testOptions {
+        animationsDisabled true
+        unitTests.returnDefaultValues = true
+        unitTests.all {
+            // All the usual Gradle options.
+            jvmArgs '-XX:MaxPermSize=256m'
+            testLogging {
+                events "passed", "skipped", "failed", "standardOut", "standardError"
+            }
+        }
+    }
+
+    configurations.all {
+        resolutionStrategy.force "com.android.support:support-annotations:$rootProject.androidVersions.support"
+        resolutionStrategy.force "com.android.support:support-v4:$rootProject.androidVersions.support"
+        resolutionStrategy.force "com.android.support:appcompat-v7:$rootProject.androidVersions.support"
+        resolutionStrategy.force "android.arch.core:runtime:$rootProject.androidVersions.androidarch"
+        exclude group: 'com.google.code.findbugs'
+    }
+}
+
+dependencies {
+        //doc_dependencies_sample_app_start
+        //dependency for display map and core code
+        implementation("com.tomtom.online:sdk-maps:$rootProject.internalVersions.sdk")
+
+        //dependency for traffic
+        implementation("com.tomtom.online:sdk-traffic:$rootProject.internalVersions.sdk")
+
+        //dependency for search
+        implementation("com.tomtom.online:sdk-search:$rootProject.internalVersions.sdk")
+
+        //dependency for route planner
+        implementation("com.tomtom.online:sdk-routing:$rootProject.internalVersions.sdk")
+
+        //dependency for rx extensions
+        implementation("com.tomtom.online:sdk-maps-rx-extensions:$rootProject.internalVersions.sdk")
+
+        //dependency for maps ui extensions
+        implementation("com.tomtom.online:sdk-maps-ui-extensions:$rootProject.internalVersions.sdk")
+        //dependency for static maps extensions
+        implementation("com.tomtom.online:sdk-maps-static-image:$rootProject.internalVersions.sdk")
+        //doc_dependencies_sample_app_stop
+
+    implementation "com.github.florent37:singledateandtimepicker:$rootProject.libVersions.singledateandtimepicker"
+    implementation "com.android.support.constraint:constraint-layout:$rootProject.androidVersions.constraint_layout"
+    implementation "android.arch.lifecycle:viewmodel:$rootProject.androidVersions.androidarch"
+    implementation "android.arch.lifecycle:extensions:$rootProject.androidVersions.androidarch"
+    debugImplementation "com.squareup.leakcanary:leakcanary-android:$rootProject.libVersions.leakcanary"
+    releaseImplementation "com.squareup.leakcanary:leakcanary-android-no-op:$rootProject.libVersions.leakcanary"
+
+}
+

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?><!-- XML description of main navigation screen, all view ids start with nav_ --><!--
+
+    Copyright (c) 2015-2018 TomTom N.V. All rights reserved.
+
+    This software is the proprietary copyright of TomTom N.V. and its subsidiaries and may be used
+    for internal evaluation purposes or commercial use strictly subject to separate licensee
+    agreement between you and TomTom. If you are the licensee, you are only permitted to use
+    this Software in accordance with the terms of your license agreement. If you are not the
+    licensee then you are not authorised to use this software in any manner and should
+    immediately return it to TomTom N.V.
+
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/info_bar_content"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/eta_panel_height"
+    android:layout_alignParentTop="true"
+    android:background="@color/black"
+    android:padding="@dimen/offset_small">
+
+    <ImageView
+        android:id="@+id/left_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/maneuver_arrival_flag" />
+
+    <TextView
+        android:id="@+id/left_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@id/left_icon"
+        android:layout_toRightOf="@id/left_icon"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_default"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/right_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_default"
+        android:textStyle="bold"/>
+
+</RelativeLayout>

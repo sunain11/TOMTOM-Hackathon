@@ -1,0 +1,57 @@
+apply from: 'dependenciesVersions.gradle'
+
+ext {
+    def releaseProps = new Properties()
+    releaseProps.load(new FileInputStream("release.properties"))
+
+    androidBuildToolsVersion = '28.0.2'
+    androidCompileSdkVersion = 27
+    androidTargetSdkVersion = 23
+    libraryMinSdkVersion = 16
+    xplorerMinSdkVersion = 16
+    sampleMinSdkVersion = 16
+
+    // readable version name of library
+    libraryVersion = releaseProps.getProperty('navSdkVersion')
+}
+
+//tag::doc_setup_main_build_gradle[]
+buildscript {
+
+    repositories {
+        google()
+        jcenter()
+        maven { url 'https://maven.fabric.io/public' }
+        maven { url "https://plugins.gradle.org/m2/" }
+        maven { url 'https://dl.bintray.com/kotlin/kotlin-dev/' }
+        maven { url 'https://jcenter.bintray.com'}
+        maven { url 'https://oss.sonatype.org/content/repositories/snapshots/' }
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.2.1'
+    }
+}
+//end::doc_setup_main_build_gradle[]
+
+//tag::doc_setup_main_build_gradle_repo[]
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        maven { url 'https://jcenter.bintray.com'}
+        maven { url 'https://maven.fabric.io/public' }
+        maven { url 'https://dl.bintray.com/kotlin/kotlin-dev/' }
+        maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
+        maven {
+            url "https://maven.tomtom.com:8443/nexus/content/repositories/releases/"
+        }
+//end::doc_setup_main_build_gradle_repo[]
+    }
+}
+
+
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

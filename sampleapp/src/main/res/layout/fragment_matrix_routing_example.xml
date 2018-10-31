@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="top">
+
+        <com.tomtom.online.sdk.samples.cases.route.matrix.MatrixRouteTableHeader
+            android:id="@+id/matrixRoutesListHeader"
+            android:background="@color/tt_green"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/matrixRoutesList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/background_light" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/offset_options_buttons"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom">
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/matrixRestaurantsBtn"
+                android:layout_width="@dimen/control_button_width"
+                android:layout_height="@dimen/control_button_height"
+                android:layout_marginRight="@dimen/control_button_margin"
+                android:paddingBottom="@dimen/control_button_margin"
+                android:background="@drawable/action_button"
+                android:button="@android:color/transparent"
+                android:text="@string/matrix_routing_action_btn_one_to_many"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/matrixTaxiBtn"
+                android:layout_width="@dimen/control_button_width"
+                android:layout_height="@dimen/control_button_height"
+                android:paddingBottom="@dimen/control_button_margin"
+                android:layout_marginBottom="@dimen/offset_options_buttons"
+                android:background="@drawable/action_button"
+                android:button="@android:color/transparent"
+                android:text="@string/matrix_routing_action_btn_many_to_many"
+                android:textAlignment="center" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+</FrameLayout>
