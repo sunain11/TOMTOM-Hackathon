@@ -24,6 +24,10 @@ public class ChevronTrackingFragment extends ExampleFragment<ChevronTrackingPres
         } else if (newValues[1]) {
             presenter.stopTracking();
         }
+        else if(newValues[2])
+        {
+            presenter.accident();
+        }
     }
 
     @Override
@@ -36,6 +40,7 @@ public class ChevronTrackingFragment extends ExampleFragment<ChevronTrackingPres
 
         view.addOption(R.string.chevron_tracking_start);
         view.addOption(R.string.chevron_tracking_stop);
+        view.addOption("Met an accident");
 
         optionsView.selectItem(1, true);
     }

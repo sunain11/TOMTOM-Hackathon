@@ -13,7 +13,7 @@
 -->
 
 <resources>
-    <string name="app_name">Maps SDK Examples</string>
+    <string name="app_name">SmartDrive Examples</string>
 
     <string name="hello">Hello World, LogTool!</string>
 
@@ -308,8 +308,8 @@
     <string name="marker_dragging_start_message">Marker dragged from</string>
 
     <string name="dynamic_map">Dynamic map</string>
-    <string name="chevron_tracking">Chevron tracking</string>
-    <string name="chevron_tracking_subtitle">Camera follows the chevron</string>
+    <string name="chevron_tracking">SmartDrive Tracking Demo</string>
+    <string name="chevron_tracking_subtitle">Camera follows the Marker</string>
     <string name="chevron_tracking_start">Start tracking</string>
     <string name="chevron_tracking_stop">Stop tracking</string>
 

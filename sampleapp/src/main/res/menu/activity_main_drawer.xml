@@ -9,100 +9,119 @@
             <item
                 android:id="@+id/map_types"
                 android:icon="@drawable/ic_menu_send"
-                android:title="@string/map_tiles_types_title" />
+                android:title="@string/map_tiles_types_title"
+                android:visible="false"/>
 
             <item
                 android:id="@+id/traffic_vector_layer"
                 android:icon="@drawable/ic_menu_send"
-                android:title="@string/submenu_vector_map_traffic_layer" />
+                android:title="@string/submenu_vector_map_traffic_layer"
+                android:visible="false"/>
 
             <item
                 android:id="@+id/traffic_raster_layer"
                 android:icon="@drawable/ic_menu_send"
-                android:title="@string/submenu_raster_map_traffic_layer" />
+                android:title="@string/submenu_raster_map_traffic_layer"
+                android:visible="false"/>
 
             <item
                 android:id="@+id/maplanguageparam"
                 android:icon="@drawable/ic_menu_send"
-                android:title="@string/menu_lang_param" />
+                android:title="@string/menu_lang_param"
+                android:visible="false"/>
 
             <item
                     android:id="@+id/mapgeopoliticalview"
                     android:icon="@drawable/ic_menu_send"
-                    android:title="@string/menu_geopolitical_view" />
+                    android:title="@string/menu_geopolitical_view"
+                android:visible="false"/>
             <item
                 android:id="@+id/map_custom_style"
                 android:icon="@drawable/ic_menu_send"
-                android:title="@string/menu_custom_style" />
+                android:title="@string/menu_custom_style"
+                android:visible="false"/>
 
             <item
                 android:id="@+id/map_static_image"
                 android:icon="@drawable/ic_menu_send"
-                android:title="@string/menu_static_image" />
+                android:title="@string/menu_static_image"
+                android:visible="false"/>
 
         </menu>
     </item>
 
     <item
         android:checkableBehavior="single"
-        android:title="@string/menu_map_manipulation">
+        android:title="@string/menu_map_manipulation"
+        android:visible="false">
         <menu>
 
             <item
                 android:id="@+id/mapcentering"
                 android:icon="@drawable/ic_menu_send"
-                android:title="@string/menu_map_centering" />
+                android:title="@string/menu_map_centering"
+                android:visible="false"/>
 
             <item
                 android:id="@+id/mapmode"
                 android:icon="@drawable/ic_menu_send"
-                android:title="@string/map_mode" />
+                android:title="@string/map_mode"
+                android:visible="false"/>
 
             <item
                 android:id="@+id/map_events"
                 android:checkableBehavior="single"
                 android:icon="@drawable/ic_menu_send"
-                android:title="@string/menu_events" />
+                android:title="@string/menu_events"
+                android:visible="false"/>
 
             <item
                 android:id="@+id/map_ui_extensions"
                 android:checkableBehavior="single"
                 android:icon="@drawable/ic_menu_send"
-                android:title="@string/map_ui_extensions" />
+                android:title="@string/map_ui_extensions"
+                android:visible="false"/>
         </menu>
     </item>
 
     <item
         android:checkableBehavior="single"
-        android:title="@string/menu_markers_options">
+        android:title="@string/menu_markers_options"
+        android:visible="false">
         <menu>
 
             <item
                 android:id="@+id/markers_custom"
                 android:icon="@drawable/ic_menu_send"
-                android:title="@string/menu_markers_custom" />
+                android:title="@string/menu_markers_custom"
+                android:visible="false"/>
             <item
                 android:id="@+id/advanced_markers"
                 android:icon="@drawable/ic_menu_send"
-                android:title="@string/menu_advanced_markers" />
+                android:title="@string/menu_advanced_markers"
+                android:visible="false"/>
             <item
                 android:id="@+id/markers_balloons"
                 android:icon="@drawable/ic_menu_send"
-                android:title="@string/menu_markers_balloons" />
+                android:title="@string/menu_markers_balloons"
+                android:visible="false"/>
             <item
                 android:id="@+id/custom_shapes"
                 android:icon="@drawable/ic_menu_send"
-                android:title="@string/menu_custom_shapes" />
+                android:title="@string/menu_custom_shapes"
+                android:visible="false"/>
 
             <item
                 android:id="@+id/markers_clustering"
                 android:icon="@drawable/ic_menu_send"
-                android:title="@string/markers_clustering_title" />
+                android:title="@string/markers_clustering_title"
+                android:visible="false"/>
 
             <item
                 android:id="@+id/route_customization"
                 android:icon="@drawable/ic_menu_send"
-                android:title="@string/menu_route_customization" />
+                android:title="@string/menu_route_customization"
+                android:visible="false"/>
         </menu>
     </item>
 
@@ -115,77 +134,92 @@
         </menu>
     </item>
 
-    <item android:title="@string/menu_traffic">
+    <item android:title="@string/menu_traffic"
+        android:visible="false">
         <menu>
             <item
                     android:id="@+id/traffic_incident"
                     android:icon="@drawable/ic_menu_send"
-                    android:title="@string/traffic_incident_list_title" />
+                    android:title="@string/traffic_incident_list_title"
+                android:visible="false"/>
 
         </menu>
     </item>
 
 
-    <item android:title="@string/menu_route_planner">
+    <item android:title="@string/menu_route_planner"
+        android:visible="false">
         <menu>
             <item
                 android:id="@+id/route_travel_modes"
                 android:icon="@drawable/ic_menu_send"
-                android:title="@string/travel_mode" />
+                android:title="@string/travel_mode"
+                android:visible="false"/>
 
             <item
                 android:id="@+id/route_types"
                 android:icon="@drawable/ic_menu_send"
-                android:title="@string/route_types" />
+                android:title="@string/route_types"
+                android:visible="false"/>
 
             <item
                 android:id="@+id/route_avoids"
                 android:icon="@drawable/ic_menu_send"
-                android:title="@string/route_avoids_title" />
+                android:title="@string/route_avoids_title"
+                android:visible="false"/>
 
             <item
                 android:id="@+id/route_waypoints"
                 android:icon="@drawable/ic_menu_send"
-                android:title="@string/route_waypoints" />
+                android:title="@string/route_waypoints"
+                android:visible="false"/>
 
             <item
                 android:id="@+id/departure_and_arrival_time"
                 android:icon="@drawable/ic_menu_send"
-                android:title="@string/route_departure_and_arrival_time_title" />
+                android:title="@string/route_departure_and_arrival_time_title"
+                android:visible="false"/>
 
             <item
                 android:id="@+id/route_alternatives"
                 android:icon="@drawable/ic_menu_send"
-                android:title="@string/route_alternatives" />
+                android:title="@string/route_alternatives"
+                android:visible="false"/>
 
             <item
                 android:id="@+id/maneuvers_list"
                 android:icon="@drawable/ic_menu_send"
-                android:title="@string/maneuvers_list_title" />
+                android:title="@string/maneuvers_list_title"
+                android:visible="false"/>
 
             <item
                 android:id="@+id/consumption_model"
                 android:icon="@drawable/ic_menu_send"
-                android:title="@string/route_consumption_model" />
+                android:title="@string/route_consumption_model"
+                android:visible="false"/>
 
             <item
                 android:id="@+id/supporting_points"
                 android:icon="@drawable/ic_menu_send"
-                android:title="@string/route_supporting_points" />
+                android:title="@string/route_supporting_points"
+                android:visible="false"/>
 
             <item
                 android:id="@+id/route_reachable_range"
                 android:icon="@drawable/ic_menu_send"
-                android:title="@string/route_reachable_range" />
+                android:title="@string/route_reachable_range"
+                android:visible="false"/>
             <item
                 android:id="@+id/batch_routing"
                 android:icon="@drawable/ic_menu_send"
-                android:title="@string/batch_routing" />
+                android:title="@string/batch_routing"
+                android:visible="false"/>
 
             <item
                 android:id="@+id/matrix_routing"
                 android:icon="@drawable/ic_menu_send"
-                android:title="@string/matrix_routing_title" />
+                android:title="@string/matrix_routing_title"
+                android:visible="false"/>
         </menu>
     </item>
 
@@ -197,56 +231,67 @@
             <item
                 android:id="@+id/address_search"
                 android:icon="@drawable/ic_menu_send"
-                android:title="@string/address_search" />
+                android:title="@string/address_search"
+                android:visible="false"/>
             <item
                 android:id="@+id/category_search"
                 android:icon="@drawable/ic_menu_send"
-                android:title="@string/category_search" />
+                android:title="@string/category_search"
+                android:visible="false"/>
 
             <item
                 android:id="@+id/language_selector_search"
                 android:icon="@drawable/ic_menu_send"
-                android:title="@string/language_selector_search" />
+                android:title="@string/language_selector_search"
+                android:visible="false"/>
 
             <item
                 android:id="@+id/typeahead_search"
                 android:icon="@drawable/ic_menu_send"
-                android:title="@string/type_ahead_search" />
+                android:title="@string/type_ahead_search"
+                android:visible="false"/>
 
             <item
                 android:id="@+id/fuzzy_search"
                 android:icon="@drawable/ic_menu_send"
-                android:title="@string/fuzzy_search" />
+                android:title="@string/fuzzy_search"
+                android:visible="false"/>
 
             <item
                 android:id="@+id/reverse_geocoding"
                 android:icon="@drawable/ic_menu_send"
-                android:title="@string/reverse_geocoding" />
+                android:title="@string/reverse_geocoding"
+                android:visible="false"/>
 
             <item
                 android:id="@+id/search_along_route"
                 android:icon="@drawable/ic_menu_send"
-                android:title="@string/search_along_route" />
+                android:title="@string/search_along_route"
+                />
 
             <item
                 android:id="@+id/geometry_search"
                 android:icon="@drawable/ic_menu_send"
-                android:title="@string/geometry_search" />
+                android:title="@string/geometry_search"
+                android:visible="false"/>
 
             <item
                 android:id="@+id/entry_points"
                 android:icon="@drawable/ic_menu_send"
-                android:title="@string/entry_points" />
+                android:title="@string/entry_points"
+                android:visible="false"/>
 
             <item
                 android:id="@+id/additional_data"
                 android:icon="@drawable/ic_menu_send"
-                android:title="@string/additional_data_provider_search" />
+                android:title="@string/additional_data_provider_search"
+                android:visible="false"/>
 
             <item
                 android:id="@+id/batch_search"
                 android:icon="@drawable/ic_menu_send"
-                android:title="@string/batch_search" />
+                android:title="@string/batch_search"
+                android:visible="false"/>
 
         </menu>
     </item>

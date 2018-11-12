@@ -26,7 +26,7 @@
         <activity
             android:name="com.tomtom.online.sdk.samples.activities.SplashActivity"
             android:configChanges="orientation|screenSize"
-            android:label="@string/title_activity_main"
+            android:label="SmartDrive TomTom Example"
             android:noHistory="true"
             android:theme="@style/SplashTheme">
             <intent-filter>
@@ -36,7 +36,7 @@
         </activity>
         <activity
             android:name="com.tomtom.online.sdk.samples.activities.FunctionalExamplesActivity"
-            android:label="@string/title_activity_main"
+            android:label="SmartDrive TomTom Example"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"
             android:windowSoftInputMode="stateUnchanged|adjustPan">
             <intent-filter>
