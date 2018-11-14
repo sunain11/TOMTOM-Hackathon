@@ -26,7 +26,7 @@ public class ChevronTrackingFragment extends ExampleFragment<ChevronTrackingPres
         }
         else if(newValues[2])
         {
-            presenter.accident();
+            presenter.accident_prone();
         }
     }
 
